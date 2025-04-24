@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.theobl.openableirondoor.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "openableirondoor.refmap.json",
+  "mixins": [
+    "DoorBlockMixin",
+    "TrapDoorBlockMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
