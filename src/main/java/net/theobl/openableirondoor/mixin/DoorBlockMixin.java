@@ -37,7 +37,7 @@ public abstract class DoorBlockMixin {
             level.setBlock(pos, state, 10);
             this.playSound(player, level, pos, state.getValue(OPEN));
             level.gameEvent(player, this.isOpen(state) ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
-            cir.setReturnValue(InteractionResult.sidedSuccess(level.isClientSide));
+            cir.setReturnValue(InteractionResult.SUCCESS);
         }
     }
 

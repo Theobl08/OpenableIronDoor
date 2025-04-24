@@ -27,7 +27,7 @@ public abstract class TrapDoorBlockMixin {
     private void openableMetalTrapDoors(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult, CallbackInfoReturnable<InteractionResult> cir) {
         if(openableIronDoor$canBeOpened(state)) {
             this.toggle(state, level, pos, player);
-            cir.setReturnValue(InteractionResult.sidedSuccess(level.isClientSide));
+            cir.setReturnValue(InteractionResult.SUCCESS);
         }
     }
 
